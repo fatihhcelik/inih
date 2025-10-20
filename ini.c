@@ -165,7 +165,7 @@ int ini_parse_stream(ini_reader reader, void* stream, ini_handler handler,
                 if (!error)
                     error = lineno;
                 size_t abyss_len = strlen(abyss);
-                if (abyss_len > 0 && abyss[strlen(abyss) - 1] == '\n')
+                if (abyss_len > 0 && abyss[abyss_len - 1] == '\n')
                     break;
             }
         }
